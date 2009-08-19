@@ -3,7 +3,10 @@
   * refactor InjectableModule -> Binder
   * refactor Injectable -> IBinder
   * add DefaultInjector (with bindings.xml in META-INF)
-  * injection on instances
+  * injection on existing instances
+  * graph on project binder
+  * AOP like interceptor
+  * default bindings (like logger)
   * XML configuration 
   
 {{{   

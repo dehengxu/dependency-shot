@@ -1,7 +1,5 @@
 #summary project TODO list
 
-  * refactor InjectableModule -> Binder
-  * refactor Injectable -> IBinder
   * add DefaultInjector (with bindings.xml in META-INF)
   * injection on existing instances
   * graph on project binder

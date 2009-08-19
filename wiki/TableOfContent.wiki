@@ -1,3 +1,4 @@
+  * [about About dependency-shot]
   * [TODO The TODO list of the project]
   * [DOMReference DOM reference]  
   * [ArticlesXSS Web security]

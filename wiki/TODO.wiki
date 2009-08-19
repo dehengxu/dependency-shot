@@ -4,8 +4,9 @@
   * injection on existing instances
   * graph on project binder
   * AOP like interceptor
-  * default bindings (like logger)
-  * XML configuration 
+  * default bindings (like logger) 
+  * automatic binding configuration from xml (without conf file and explicit binder)
+  * XML configuration
   
 {{{   
   <bindings>

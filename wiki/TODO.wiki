@@ -3,7 +3,7 @@
   * add DefaultInjector (with bindings.xml in META-INF)
   * injection on existing instances
   * graph on project binder
-  * AOP like interceptor
+  * AOP like interceptor (added, multiples interceptor classes support needed)
   * default bindings (like logger) 
   * automatic binding configuration from xml (without conf file and explicit binder)
   * XML configuration

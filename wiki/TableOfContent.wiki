@@ -1,4 +1,4 @@
   * [about About dependency-shot]
-  * [features Features]
+  * Features
     * [AOP AOP]
   * [TODO The TODO list of the project]

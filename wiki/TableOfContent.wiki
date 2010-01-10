@@ -2,4 +2,3 @@
   * Features
     * [AOP AOP]
   * [maven Using Dependency Shot with Maven]
-  * [TODO The TODO list of the project]

@@ -1,4 +1,14 @@
   * [about About dependency-shot]
   * Features
-    * [AOP AOP]
+    * [DI Dependency Injection]
+    * [JSR JSR-330 support]
+    * [managedsupport @ManagedBean support]
+      * [JNDI JNDI lookup for objects]
+      * [lifecycle Lifecycle support]
+      * [AOP Interceptors]
+  * Tutorials
+    * [config Configure modules with the fluent API]
+    * [basic Basic example]
+    * [complex Complex example]
+    * [managed Use Managed Beans in your project]
   * [maven Using Dependency Shot with Maven]

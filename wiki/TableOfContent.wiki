@@ -1,7 +1,7 @@
   * [about About dependency-shot]
   * Features
     * [DI Dependency Injection]
-    * [JSR JSR-330 support]
+    * [JSR @Inject support]
     * [managedsupport @ManagedBean support]
       * [JNDI JNDI lookup for objects]
       * [lifecycle Lifecycle support]

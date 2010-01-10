@@ -11,4 +11,4 @@
     * [basic Basic example]
     * [complex Complex example]
     * [managed Use Managed Beans in your project]
-  * [maven Using Dependency Shot with Maven]
+  * [maven Using dependency-shot with Maven]

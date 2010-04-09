@@ -12,3 +12,4 @@
     * [complex Complex example]
     * [managed Use @ManagedBean in your project]
   * [maven Using dependency-shot with Maven]
+  * [play Using dependency-shot with the Play! framework]

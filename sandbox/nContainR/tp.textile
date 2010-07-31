@@ -34,12 +34,14 @@ h3. d) @Before et @After
 
 h2. 4. Bonus
 
-h3. a) Détection des dépendances cycliques
+h3. a) 
 
-h3. b) Factories à la demande
+h3. b) Détection des dépendances cycliques
 
-h3. c) Intercepteur injectables
+h3. c) Factories à la demande
 
-h3. d) Gestion basique du cycle de vie des composants
+h3. d) Intercepteur injectables
 
-h3. e) Configuration fluide
+h3. e) Gestion basique du cycle de vie des composants
+
+h3. f) Configuration fluide

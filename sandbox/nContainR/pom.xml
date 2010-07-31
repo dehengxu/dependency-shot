@@ -26,6 +26,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>nContainR</finalName>
     </build>
     <dependencies>
         <dependency>

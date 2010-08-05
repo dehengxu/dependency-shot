@@ -15,6 +15,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.inject.Inject;
 
 /**
@@ -22,6 +24,7 @@ import javax.inject.Inject;
  */
 public class NanoContainer extends AbstractContainer {
 
+    private static final Logger logger = Logger.getLogger(NanoContainer.class.getSimpleName());
     private Map<Class<?>, Class<?>> registry;
     private Map<Class<?>, Provider> factories;
     private List<Class<?>> dependencies;
@@ -34,6 +37,30 @@ public class NanoContainer extends AbstractContainer {
         dependencies = new ArrayList<Class<?>>();
         managedBeans = new ArrayList<Object>();
         this.aopEnabled = aopEnabled;
+        registerShutdownHook();
+    }
+
+    public final void registerShutdownHook() {
+        ShutdownThread thread = new ShutdownThread();
+        thread.setContainer(this);
+        Runtime.getRuntime().addShutdownHook(thread);
+    }
+
+    /**
+     * {@inheritDoc }
+     */
+    @Override
+    public void shutdownContainer() {
+        for (Object obj : this.managedBeans) {
+            if (obj != null) {
+                try {
+                    // lifecycle stop
+                    applyPreDestroy(obj);
+                } catch (Exception ex) {
+                    logger.log(Level.SEVERE, null, ex);
+                }
+            }
+        }
     }
 
     /**
@@ -91,19 +118,6 @@ public class NanoContainer extends AbstractContainer {
         } finally {
             // gestion des dependances cycliques
             dependencies.remove(clazz);
-        }
-    }
-
-    /**
-     * {@inheritDoc }
-     */
-    @Override
-    protected final void finalize() throws Throwable {
-        super.finalize();
-        for (Object obj : this.managedBeans) {
-            if (obj != null)
-                // lifecycle stop
-                applyPreDestroy(obj);
         }
     }
 

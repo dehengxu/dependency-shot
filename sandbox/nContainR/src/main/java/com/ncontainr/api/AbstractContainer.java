@@ -28,4 +28,8 @@ public abstract class AbstractContainer implements Container {
      * Called when object is created.
      */
     protected abstract void applyPostConstruct(Object instance) throws Exception;
+    /**
+     * Called at shutdown time to stop managed bean instances.
+     */
+    public abstract void shutdownContainer();
 }

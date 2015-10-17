@@ -1,0 +1,15 @@
+  * [About dependency-shot](about.md)
+  * Features
+    * [Dependency Injection](DI.md)
+    * [@Inject support](JSR.md)
+    * [@ManagedBean support](managedsupport.md)
+      * [JNDI lookup for objects](JNDI.md)
+      * [Lifecycle support](lifecycle.md)
+      * [Interceptors](AOP.md)
+  * Tutorials
+    * [Configure modules with the fluent API](config.md)
+    * [Basic example](basic.md)
+    * [Complex example](complex.md)
+    * [Use @ManagedBean in your project](managed.md)
+  * [Using dependency-shot with Maven](maven.md)
+  * [Using dependency-shot with the Play! framework](play.md)
